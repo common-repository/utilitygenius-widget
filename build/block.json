@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/utility-genius-widget",
+  "version": "1.0.0",
+  "title": "UtilityGenius Widget Block",
+  "category": "widgets",
+  "description": "A Gutenberg block for displaying either an Ad or Full Page UtilityGenius widget.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "widgetToken": {
+      "type": "string",
+      "default": null
+    },
+    "widgetType": {
+      "type": "string",
+      "default": "Full Page"
+    }
+  },
+  "textdomain": "utility-genius-widget",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
